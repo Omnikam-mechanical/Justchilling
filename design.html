@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JustChilling - Design Your T-Shirt</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <h1>JustChilling</h1>
+    <p>Design Your Dream T-Shirt in Minutes!</p>
+  </div>
+
+  <!-- Design Tool -->
+  <div class="content">
+    <h2>Design Your T-Shirt</h2>
+
+    <form id="designForm">
+      <!-- Image Upload -->
+      <div class="form-group">
+        <label for="designUpload">Upload Your Design:</label><br>
+        <input type="file" id="designUpload" name="designUpload" accept="image/*" />
+      </div>
+
+      <br>
+
+      <!-- Add Text -->
+      <div class="form-group">
+        <label for="textAdd">Add Custom Text:</label><br>
+        <input type="text" id="textAdd" name="textAdd" placeholder="Enter your slogan or name" />
+      </div>
+
+      <br>
+
+      <!-- Buttons -->
+      <div class="form-actions">
+        <button type="button" class="button live-preview-btn">Live Preview</button>
+        <button type="button" class="button add-to-cart-btn">Add to Cart</button>
+      </div>
+    </form>
+
+    <!-- Live Preview Area -->
+    <div class="live-preview-area">
+      <h3>Live Preview</h3>
+      <div class="preview-container">
+        <img id="previewImage" src="" alt="Uploaded Design" />
+        <div id="previewText" class="preview-text"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

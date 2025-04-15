@@ -1,0 +1,256 @@
+/* === Global Reset and Base Styles === */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* === Header === */
+.header {
+    background-color: #2d3e50;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.header p {
+    font-size: 1.25rem;
+}
+
+/* === Hero Section === */
+.hero {
+    background: #2c3e50;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3em;
+}
+
+.hero span {
+    color: #e74c3c;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.hero .btn {
+    background: #e74c3c;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: inline-block;
+    transition: background 0.3s ease;
+}
+
+.hero .btn:hover {
+    background: #c0392b;
+}
+
+/* === Content Wrapper === */
+.content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* === Button Styles === */
+.button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* === Sections (About, Skills, Projects, Contact) === */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about, .skills, .projects, .contact {
+    background: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 1000px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* === Skill Styles === */
+.skill-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skill {
+    background: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+/* === Project Cards === */
+.project-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background: #ecf0f1;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    width: 30%;
+    min-width: 280px;
+    text-align: left;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* === Contact Form === */
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact button {
+    background: #e74c3c;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact button:hover {
+    background: #c0392b;
+}
+
+/* === Live Preview Area === */
+.live-preview-area {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid #ccc;
+    background: #f0f0f0;
+    border: 1px solid #ddd;
+}
+
+.preview-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+#previewImage {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.preview-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #ff4081;
+    text-shadow: 1px 1px 2px black;
+    width: 100%;
+    pointer-events: none;
+}
+
+/* === Footer === */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer {
+    background-color: #2d3e50;
+    color: #fff;
+    padding: 1.5rem 0;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.footer p {
+    font-size: 1rem;
+}
+
+/* === Responsive Design === */
+@media screen and (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+
+    .button, .contact button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .header h1 {
+        font-size: 2.5rem;
+    }
+
+    .header p {
+        font-size: 1rem;
+    }
+}
